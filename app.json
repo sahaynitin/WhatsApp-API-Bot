@@ -1,0 +1,33 @@
+{
+  "name": "Whatsapp api bot",
+  "description": "A Telegram bot whatsapp api bot.",
+  "repository": "https://github.com/sahaynitin/WhatsApp-API-Bot",
+  "logo": "https://telegra.ph/file/320e7b96b453157bcafa3.png",
+  "keywords": ["Telegram", "Whatsapp", "Api"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Get it from @BotFather"
+    },
+    "API_ID": {
+      "description": "Your API_ID, Get it from https://my.telegram.org/apps"
+    },
+    "API_HASH": {
+      "description": "Your API_HASH, Get it from https://my.telegram.org/apps"
+    },
+    "SUDO_USERS": {
+      "description": "List of sudo users ids, seperated by space.",
+      "value": "961837574 740397935"
+    }
+  },
+   "addons": [{
+    "plan": "heroku-postgresql"
+  }],
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
