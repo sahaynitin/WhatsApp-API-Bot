@@ -9,7 +9,7 @@
     "pyrogram"
   ],
     "buildpacks": [{
-    "url": "heroku-community/apt"
+    "url": ""
   }],
   "formation": {
     "worker": {
